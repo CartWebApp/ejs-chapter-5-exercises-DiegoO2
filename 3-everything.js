@@ -1,7 +1,20 @@
 function every(array, test) {
-    // Your code here.
+    for(item of array){
+      if(test(item)){
+        
+      }
+      else{
+        return false;
+      }
+    }
+    return true;
   }
   
+  function everySomeMethod(){
+
+  }
+
+
   console.log(every([1, 3, 5], n => n < 10));
   // → true
   console.log(every([2, 4, 16], n => n < 10));
