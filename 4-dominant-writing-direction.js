@@ -8,7 +8,7 @@ function dominantDirection(text) {
   for (i = 0; i < text.length; i++) {
     textArray.push(text.codePointAt(i));
   }
-  console.log(textArray);
+  // console.log(textArray);
   let directionArray = [];
   for (i of textArray) {
     for (let script of SCRIPTS) {
@@ -19,7 +19,7 @@ function dominantDirection(text) {
       }
     }
   }
-  console.log(directionArray);
+  // console.log(directionArray);
 
   let ltr = 0;
   let rtl = 0;
