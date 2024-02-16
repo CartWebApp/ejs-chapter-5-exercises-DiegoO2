@@ -18,13 +18,17 @@ function dominantDirection(text) {
       }
     }
   }
-  return directionArray
-
-
-  // for(script of SCRIPTS){
-
-  // }
-
+  let ltr = 0;
+  let rtl = 0;
+  for (direction of directionArray){
+    if("ltr" == direction){
+    ltr++;
+    }
+    else if ("rtl" == direction){
+      rtl++;
+    }
+  }
+  return ltr > rtl ? "ltr" : "rtl";
 }
 
 
